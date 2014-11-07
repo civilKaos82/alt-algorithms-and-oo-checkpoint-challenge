@@ -21,7 +21,7 @@ Bernie's mate Deano from Brisbane (or Brizzy as Deano calls it) has a small used
 The same programmer who left Bernie's project half-done, did the same with Deano's. Now it's your job to ship the product that Deano wants.
 
 
-#### Recipe System Use Cases:
+#### Dealership System Use Cases:
 
 1. Load cars from a file
 2. List all cars on the lot
