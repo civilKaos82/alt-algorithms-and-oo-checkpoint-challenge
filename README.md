@@ -41,18 +41,18 @@ Listing all cars should print something like this to the console:
 	
 If a user wants to find a certain car or set of cars, the input and output should look something like this:
 	
-	Input:
-	```
-	ruby dealership.rb find make toyota
-	```
+Input:
+```
+ruby dealership.rb find make toyota
+```
 	
-	Output:
-	```
-	2 results found:
-	
-	2004 Toyota Corolla, ID: 98773
-	2012 Toyota Prius, ID: 78990
-  ```
+Output:
+```
+2 results found:
+
+2004 Toyota Corolla, ID: 98773
+2012 Toyota Prius, ID: 78990
+```
 ---
 
 Deano is hoping you'll be able to get something to him in three hours! Try to complete these objectives as quickly as you can. Be wary of over-designing the program - your job is to solve *these* problems, not find other problems to solve.
