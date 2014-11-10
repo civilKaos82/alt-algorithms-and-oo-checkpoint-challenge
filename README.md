@@ -2,8 +2,8 @@ phase-1-alt-mock-assessment
 ===========================
 
 # Deano's Dealership
- 
-##Learning Competencies 
+
+##Learning Competencies
 
 * Infer the behavior and structure of code variables, methods, and objects accessed from test code
 * Build test methods with descriptive output and clear indicators of passing tests
@@ -12,7 +12,7 @@ phase-1-alt-mock-assessment
 * Create well-defined classes with a single responsibility
 * Identify and implement classes based on real world requirements
 
-##Summary 
+##Summary
 
 Your reputation for building command line apps is growing. Fran's orange grove is blooming and Bernie's bistro is booming.
 
@@ -31,21 +31,22 @@ The same programmer who left Bernie's project half-done, did the same with Deano
 6. Display all cars of a given make
 
 Listing all cars should print something like this to the console:
-	
+
 	2001 Honda Accord, ID: 55839
 	2004 Toyota Corolla, ID: 98773
 	2002 Peugeot 307, ID: 66761
 	2003 BMW M5, ID: 10029
 	2010 Honda Civic, ID: 00822
 	2012 Toyota Prius, ID: 78990
-	
+	1971 DaihatsuHijet, ID: 38384
+
 If a user wants to find a certain car or set of cars, the input and output should look something like this:
-	
+
 Input:
 ```
 ruby dealership.rb find make toyota
 ```
-	
+
 Output:
 ```
 2 results found:
@@ -63,7 +64,7 @@ Deano is hoping you'll be able to get something to him in three hours! Try to co
 
 Try to get the existing dealership system to raise errors by interacting with it via the command-line. Try all sorts of crazy things. The code is dirty and incomplete; you may have to clean it up.
 
-Be systematic in your approach. Write down what you tried, what you thought would happen, and what actually happened. 
+Be systematic in your approach. Write down what you tried, what you thought would happen, and what actually happened.
 
 ### Write the code how you want to use it
 
@@ -76,7 +77,7 @@ For example, if you want to be able to find the newest car on the lot, you might
 ```ruby
 expect(dealership.newest_car.id).to eq(78990)
 ```
-	
+
 ###Release 1 : Implement the MVP
 
 MVP == Minimum Viable Product.
