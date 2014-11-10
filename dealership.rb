@@ -1,15 +1,10 @@
 class Car
-  # I guess these will be the objects inside the dealership...
+  # I need to encapsulate these objects inside the dealership...
 end
 
 class Dealership
-  def initialize(inventory_file)
-    @cars = []
-    load_cars_from_file(inventory_file)
-  end
-
-  def load_cars_from_file(filepath)
-    @cars += CarLoader.get_cars_from_csv(filepath)
+  def initialize(cars)
+    @cars = cars || []
   end
 
   def find_make(make)
@@ -21,23 +16,27 @@ class Dealership
   end
 
   def newest_car
-    # I somehow need to return the car on the lot that is the newest...
+    # I need to return the car on the lot that is the newest...
   end
 end
 
 module CarLoader
   def self.get_cars_from_csv(filepath)
-    # I see that this method is being called in the Dealership#load_cars_from_file
-    # I guess I have to return something useful to that method...
+    # The result is being passed to the new dealership.
+    # I need to return some useful data from this method...
   end
 end
 
-
-dealership = Dealership.new("inventory.csv")
+cars = CarLoader.get_cars_from_csv("inventory.csv")
+dealership = Dealership.new(cars)
 
 if ARGV[0] == "find"
-  if ARGV[1] == "make"
+  if ARGV[1] == "all"
+    # print all of the cars on Deano's lot
+    puts dealership.cars
+  elsif ARGV[1] == "make"
     # print cars of the make supplied in ARGV[2]
+    puts dealership.find_make(ARGV[2])
   elsif ARGV[1] == "pre"
     # print cars made before the year supplied in ARGV[2]
   elsif ARGV[1] == "post"
