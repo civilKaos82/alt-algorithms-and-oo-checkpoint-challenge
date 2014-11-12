@@ -58,6 +58,12 @@ Output:
 
 Deano is hoping you'll be able to get something to him in three hours! Try to complete these objectives as quickly as you can. Be wary of over-designing the program - your job is to solve *these* problems, not find other problems to solve.
 
+##Testing
+
+Your **top priority** is to create a functioning implementation of Deano's Dealership. There are outlines of three basic tests in the spec file. One of these tests is already written for you, but is not passing. You should get this failing test to pass and write the other two pending tests.
+
+You are _not_ required to add your own tests in this challenge, but you're welcome to if you so desire. _Just be mindful of how you spend your time._ You have a limited amount of time, and tests alone cannot demonstrate your learning from the last two weeks. Focus on implementation first.
+
 ##Releases
 
 ###Release 0 : Find the edges
