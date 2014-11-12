@@ -38,7 +38,7 @@ Listing all cars should print something like this to the console:
 	2003 BMW M5, ID: 10029
 	2010 Honda Civic, ID: 00822
 	2012 Toyota Prius, ID: 78990
-	1971 DaihatsuHijet, ID: 38384
+	1971 Daihatsu Hijet, ID: 38384
 
 If a user wants to find a certain car or set of cars, the input and output should look something like this:
 
