@@ -3,7 +3,7 @@ class Car
 end
 
 class Dealership
-  def initialize(cars)
+  def initialize(cars = nil)
     @cars = cars || []
   end
 
