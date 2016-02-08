@@ -10,8 +10,4 @@ class Dealership
     end
     cars_by_make
   end
-
-  def newest_car
-    # I need to return the car on the lot that is the newest...
-  end
 end
