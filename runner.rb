@@ -1,12 +1,6 @@
 require_relative 'car'
+require_relative 'car_loader'
 require_relative 'dealership'
-
-module CarLoader
-  def self.get_cars_from_csv(filepath)
-    # The result is being passed to the new dealership.
-    # I need to return some useful data from this method...
-  end
-end
 
 cars = CarLoader.get_cars_from_csv("inventory.csv")
 dealership = Dealership.new(cars)

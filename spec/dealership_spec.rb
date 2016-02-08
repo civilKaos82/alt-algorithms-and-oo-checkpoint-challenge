@@ -1,13 +1,6 @@
 require_relative('../dealership')
 require_relative('../car')
 
-describe CarLoader do
-  describe "#get_cars_from_csv" do
-    xit "returns an array of Car objects" do
-      # change 'xit' to 'it' and finish this test
-    end
-  end
-end
 
 describe Dealership do
   let(:cars) {[ Car.new(make: "Honda"),
