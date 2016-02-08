@@ -1,4 +1,4 @@
-require_relative('dealership')
+require_relative('../dealership')
 
 describe Car do
 end
