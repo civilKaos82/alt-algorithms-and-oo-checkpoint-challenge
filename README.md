@@ -6,81 +6,61 @@ Your reputation for building command line apps is growing. Fran's orange grove i
 Bernie's mate Deano from Brisbane (or Brizzy as Deano calls it) has a small used car dealership.  He is about to receive a big shipment of used cars from Japan and he wants an application to help him manage his growing inventory.  It just so happens that the same programmer who left Bernie's project half-done, did the same with Deano's.  It's your job to ship the product that Deano wants before the shipment of cars arrives.
 
 
-#### Dealership System Use Cases:
+### Inventory Management System Use Cases:
+Deano wants a quick way to get an overview of his cars.  He wants to be able to (1) list all the cars in his inventory and (2) list specific subsets of cars: cars of a given make (e.g., Honda), cars made before a given year, and cars made after a given year.
 
-1. Load cars from a file
-2. List all cars on the lot
-3. Display the newest car on the lot
-4. Display all cars made after a given year
-5. Display all cars made before a given year
-6. Display all cars of a given make
 
-Listing all cars should print something like this to the console:
+## Releases
+### Pre-Release: Review the Code Base
+As mentioned in the Summary, the previous developer left some code. Review the provided code. How was the developer approaching the problem? Does this approach make sense? Are there things you would do differently? Are there things you would keep?
 
-	2001 Honda Accord, ID: 55839
-	2004 Toyota Corolla, ID: 98773
-	2002 Peugeot 307, ID: 66761
-	2003 BMW M5, ID: 10029
-	2010 Honda Civic, ID: 00822
-	2012 Toyota Prius, ID: 78990
-	1971 Daihatsu Hijet, ID: 38384
 
-If a user wants to find a certain car or set of cars, the input and output should look something like this:
+### Release 0 : Implement the Minimum Viable Product
+Building on the provided code base, implement the use cases described in the Summary. Remember, Deano wants a working application before his shipment arrives, so we need to focus on just these features.
 
-Input:
+To recap how the program works, when users want to list all cars, the program should display something like Figure 1.  When users want to see a subset of cars (e.g., cars of a certain make), the program should display something like Figure 2.
+
+
 ```
-ruby dealership.rb find make toyota
+$ ruby inventory_management.rb list
+2001 Honda Accord (55839)
+2004 Toyota Corolla (98773)
+2002 Peugeot 307 (66761)
+2003 BMW M5 (10029)
+2010 Honda Civic (00822)
+2012 Toyota Prius (78990)
+1971 Daihatsu Hijet (38384)
 ```
+*Figure 1*.  Listing all the cars
 
-Output:
 ```
-2 results found:
+$ ruby inventory_management.rb search make toyota
+2004 Toyota Corolla (98773)
+2012 Toyota Prius (78990)
 
-2004 Toyota Corolla, ID: 98773
-2012 Toyota Prius, ID: 78990
+$ ruby inventory_management.rb search pre 2000
+1971 Daihatsu Hijet (38384)
+
+$ ruby inventory_management.rb search post 2009
+2010 Honda Civic (00822)
+2012 Toyota Prius (78990)
 ```
----
+*Figure 2*.  Displaying subsets of cars.
 
-Deano is hoping you'll be able to get something to him in three hours! Try to complete these objectives as quickly as you can. Be wary of over-designing the program - your job is to solve *these* problems, not find other problems to solve.
 
-##Testing
+### Release 1: Update Inventory (Optional)
+Congratulations on making it this far. This release is optional. If you would like to attempt this release, first commit your code locally so that if necessary, you can revert back to Release 0.
 
-Your **top priority** is to create a functioning implementation of Deano's Dealership. There are outlines of three basic tests in the spec file. One of these tests is already written for you, but is not passing. You should get this failing test to pass and write the other two pending tests.
+Currently, Deano is able to view his inventory through this application.  But, when Deano acquires or sells a car, he has to update his inventory by editing the text file where his inventory data is held.  Deano would like to update the text file through this application.  Update the application so that Deano can add or remove cars from the text file (see Figures 3 and 4).
 
-You are _not_ required to add your own tests in this challenge, but you're welcome to if you so desire. _Just be mindful of how you spend your time._ You have a limited amount of time, and tests alone cannot demonstrate your learning from the last two weeks. Focus on implementation first.
-
-##Releases
-
-###Release 0 : Find the edges
-
-Try to get the existing dealership system to raise errors by interacting with it via the command-line. Try all sorts of crazy things. The code is dirty and incomplete; you may have to clean it up.
-
-Be systematic in your approach. Write down what you tried, what you thought would happen, and what actually happened.
-
-### Write the code how you want to use it
-
-Write down the main use cases for this program.
-
-Now write tests that exercise those use cases. Use `dealership_spec.rb` for your test code.
-
-For example, if you want to be able to find the newest car on the lot, you might write some code like this:
-
-```ruby
-expect(dealership.newest_car.id).to eq(78990)
 ```
-
-###Release 1 : Implement the MVP
-
-MVP == Minimum Viable Product.
-
-Implement the use cases that were not completed or completed incorrectly by the previous consultant, as revealed by the errors you got the program to raise or the driver code you wrote.
+$ ruby inventory_management.rb update remove 55839
+```
+*Figure 3*.  Removing a car by specifying an inventory id.
 
 
-###Release 2 : Add and remove cars through the app's interface (Optional)
-
-Deano buys, sells and trades cars all the time, so it would be handy if he could add and remove cars from his master file through the app.
-
-Add the ability for Deano to remove a car from the master file, by entering the car's ID.
-
-Add the ability for Deano to add a car (and all of its details) to the master file.
+```
+$ ruby inventory_management.rb update add 98374 1995 Mazda 626
+```
+*Figure 4.*  Adding a car, specifying an inventory id, year, make, and model.
 
