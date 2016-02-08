@@ -1,14 +1,5 @@
 # Deano's Dealership
 
-##Learning Competencies
-
-* Infer the behavior and structure of code variables, methods, and objects accessed from test code
-* Build test methods with descriptive output and clear indicators of passing tests
-* Translate between different modes of modeling a problem (user stories, diagrams, pseudocode, etc.)
-* Choose the appropriate method to store data in a file.
-* Create well-defined classes with a single responsibility
-* Identify and implement classes based on real world requirements
-
 ##Summary
 
 Your reputation for building command line apps is growing. Fran's orange grove is blooming and Bernie's bistro is booming.
