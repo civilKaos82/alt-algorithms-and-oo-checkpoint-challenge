@@ -1,12 +1,9 @@
 # Deano's Dealership
 
-##Summary
+## Summary
+Your reputation for building command line apps is growing. Fran's orange grove is blooming and Bernie's Bistro is booming.
 
-Your reputation for building command line apps is growing. Fran's orange grove is blooming and Bernie's bistro is booming.
-
-Bernie's mate Deano from Brisbane (or Brizzy as Deano calls it) has a small used car dealership. He currently keeps track of the cars on his lot in a text file. He is about to receive a big shipment of used cars from Japan and he wants a quick way to see what cars he has on his lot and remove cars from his text file when they are sold.
-
-The same programmer who left Bernie's project half-done, did the same with Deano's. Now it's your job to ship the product that Deano wants.
+Bernie's mate Deano from Brisbane (or Brizzy as Deano calls it) has a small used car dealership.  He is about to receive a big shipment of used cars from Japan and he wants an application to help him manage his growing inventory.  It just so happens that the same programmer who left Bernie's project half-done, did the same with Deano's.  It's your job to ship the product that Deano wants before the shipment of cars arrives.
 
 
 #### Dealership System Use Cases:
