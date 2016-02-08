@@ -54,13 +54,13 @@ Congratulations on making it this far. This release is optional. If you would li
 Currently, Deano is able to view his inventory through this application.  But, when Deano acquires or sells a car, he has to update his inventory by editing the text file where his inventory data is held.  Deano would like to update the text file through this application.  Update the application so that Deano can add or remove cars from the text file (see Figures 3 and 4).
 
 ```
-$ ruby inventory_management.rb update remove 55839
+$ ruby inventory_management.rb remove 55839
 ```
 *Figure 3*.  Removing a car by specifying an inventory id.
 
 
 ```
-$ ruby inventory_management.rb update add 98374 1995 Mazda 626
+$ ruby inventory_management.rb add 98374 1995 Mazda 626
 ```
 *Figure 4.*  Adding a car, specifying an inventory id, year, make, and model.
 
