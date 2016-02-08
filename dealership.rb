@@ -1,6 +1,4 @@
-class Car
-  # I need to encapsulate these objects inside the dealership...
-end
+require_relative 'car'
 
 class Dealership
   def initialize(cars = nil)

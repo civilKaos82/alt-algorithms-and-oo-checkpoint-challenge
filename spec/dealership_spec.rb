@@ -1,8 +1,5 @@
 require_relative('../dealership')
 
-describe Car do
-end
-
 describe CarLoader do
   describe "#get_cars_from_csv" do
     xit "returns an array of Car objects" do
