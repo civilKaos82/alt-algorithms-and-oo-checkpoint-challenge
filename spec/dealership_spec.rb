@@ -1,4 +1,5 @@
 require_relative('../dealership')
+require_relative('../car')
 
 describe CarLoader do
   describe "#get_cars_from_csv" do
