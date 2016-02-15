@@ -1,6 +1,6 @@
 class Dealership
-  def initialize(cars = nil)
-    @cars = cars || []
+  def initialize(cars = [])
+    @cars = cars
   end
 
   def find_make(make)
