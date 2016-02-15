@@ -1,4 +1,4 @@
-inventory_number,make,model,year
+inventory_id,make,model,year
 55839,Honda,Accord,2001
 98773,Toyota,Corolla,2004
 66761,Peugeot,307,2002
